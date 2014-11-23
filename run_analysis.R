@@ -85,7 +85,7 @@ summary_data  <- dcast(all_melt, Subject_Id + Activity ~ variable, mean)
 
 #Write output file to text as same format as input files 
 
-write.table(summary_data, file="summary_data.txt")
+write.table(summary_data, file="summary_data.txt", row.name=FALSE)
 
 
 
